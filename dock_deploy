@@ -1,0 +1,10 @@
+- name: Install Docker using yum
+  hosts: all
+  become: yes
+  tasks:
+    - name: Install Docker using yum
+      yum:
+        name: docker
+        state: present
+      vars:
+        ansible_become_password: "sudo password of user {masteer node}"
