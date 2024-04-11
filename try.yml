@@ -1,5 +1,5 @@
 ---
-name: Deploy Apache Docker Container using Ansible
+- name: Deploy Apache Docker Container using Ansible
   hosts: all
   become: true
   tasks:
